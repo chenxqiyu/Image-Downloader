@@ -106,5 +106,4 @@ class Ui_Dialog_about(object):
         self.label_3.setText(_translate("Dialog_about", "邮箱:"))
         self.lineEdit_2.setText(_translate("Dialog_about", "sczhengyabin@hotmail.com"))
         self.label_5.setText(_translate("Dialog_about", "项目主页:"))
-        self.lineEdit_3.setText(_translate("Dialog_about", "https://github.com/sczhengyabin/Google-Image-Downloader"))
-
+        self.lineEdit_3.setText(_translate("Dialog_about", "https://github.com/chenxqiyu/Image-Downloader"))
