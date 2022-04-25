@@ -215,7 +215,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             return
         # 获取当前路径
         path = os.path.dirname(os.path.realpath(__file__))
-        os.startfile(path+str_dir.replace("./", "\\"))
+        if str_dir.startswith("./"):
+            os.startfile(path+str_dir.replace("./", "\\"))
+        else:
+            os.startfile(str_dir)
 
     def cancel_download(self):
         self.state = "stop"
