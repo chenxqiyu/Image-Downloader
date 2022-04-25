@@ -42,7 +42,7 @@ def download_image(image_url, dst_dir, file_name, timeout=20, proxy_type=None, p
             response.close()
             file_type = imghdr.what(file_path)
             # if file_type is not None:
-            if file_type in ["jpg", "jpeg", "png", "bmp"]:
+            if file_type in ["jpg", "jpeg", "png", "bmp","webp"]:
                 new_file_name = "{}.{}".format(file_name, file_type)
                 new_file_path = os.path.join(dst_dir, new_file_name)
                 shutil.move(file_path, new_file_path)
