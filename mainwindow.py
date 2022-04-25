@@ -57,6 +57,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.pushButton_start.clicked.connect(self.start_download)
         self.pushButton_cancel.clicked.connect(self.cancel_download)
+        self.pushButton_open.clicked.connect(self.open_download_dir)
+
+        self.radioButton_baidu.setChecked(True)
 
     def log(self, text):
         if text.strip(" \n") == "":
@@ -205,6 +208,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.update_timer.stop()
         print("stopped")
         pass
+
+    def open_download_dir(self):
+        str_dir = self.lineEdit_output.text()
+        if str_dir == "":
+            return
+        # 获取当前路径
+        path = os.path.dirname(os.path.realpath(__file__))
+        os.startfile(path+str_dir.replace("./", "\\"))
 
     def cancel_download(self):
         self.state = "stop"
