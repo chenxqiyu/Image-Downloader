@@ -100,11 +100,11 @@ class Ui_Dialog_about(object):
 
     def retranslateUi(self, Dialog_about):
         _translate = QtCore.QCoreApplication.translate
-        Dialog_about.setWindowTitle(_translate("Dialog_about", "Dialog"))
-        self.label.setText(_translate("Dialog_about", "Author:"))
+        Dialog_about.setWindowTitle(_translate("Dialog_about", "对话框"))
+        self.label.setText(_translate("Dialog_about", "作者:"))
         self.lineEdit.setText(_translate("Dialog_about", "Yabin Zheng"))
-        self.label_3.setText(_translate("Dialog_about", "Email:"))
+        self.label_3.setText(_translate("Dialog_about", "邮箱:"))
         self.lineEdit_2.setText(_translate("Dialog_about", "sczhengyabin@hotmail.com"))
-        self.label_5.setText(_translate("Dialog_about", "Project Home:"))
+        self.label_5.setText(_translate("Dialog_about", "项目主页:"))
         self.lineEdit_3.setText(_translate("Dialog_about", "https://github.com/sczhengyabin/Google-Image-Downloader"))
 
